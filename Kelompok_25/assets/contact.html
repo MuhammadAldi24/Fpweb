@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+		<title>Contact | Libur Terus Boss</title>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <link rel="shortcut icon" type="image/icon" href="barlogo.png"/>
+
+<style>
+
+.bgimg{
+    background-image: url("img/tugu_jogja.jpg");
+    min-height: 100%;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
+
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="bar black" id="myNavbar">
+    <a href="index.html" class="bar-item button hover-blue small"><img src="img/barlogo1.png"></a>
+    <a href="tentang.html" class="bar-item button hide-small"><i class="fa fa-user"></i> About</a>
+    <a href="opentrip.html" class="bar-item button hide-small"><i class="fa fa-bus"></i> Open Trip</a>
+    <a href="hotel.html" class="bar-item button hide-small"><i class="fa fa-hotel"></i> Hotel</a>
+    <a href="Guide.html" class="bar-item button hide-small"><i class="fa fa-book"></i> Articel</a>
+    <a href="gallery.html" class="bar-item button hide-small"><i class="fa fa-image"></i> Gallery</a>
+    <a href="contact.html" class="bar-item button hide-small"><i class="fa fa-phone"></i> Contact</a>
+    <a href="#" class="bar-item button hide-small right hover-red" type="search"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<div class="bgimg display-container" id="contact">
+ 	<div class=" padding-xlarge display-middle" style="white-space: nowrap">
+     <p class="xxlarge text-white wide center">CONTACT</p><br>
+ 
+       <div class="col m8 panel text-white">
+        <i class="fa fa-map-marker fa-fw hover-text-black xlarge margin-right"></i> Yogyakarta<br>
+        <i class="fa fa-phone fa-fw hover-text-black xlarge margin-right"></i> Phone: +62 877-0554-4720<br>
+        <i class="fa fa-envelope fa-fw hover-text-black xlarge margin-right"></i> Email: afdhal.w@students.amikom.ac.id<br>
+       </div> 
+     
+      <form>
+        <div class="row-padding" style="margin: 0 -16px 8px -16px">
+          <div class="half">
+            <input class="input border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="half">
+            <input class="input border" type="Email" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="input border" type="Phone" placeholder="Phone" required name="Phone Number">
+        <div style="margin-top: 8px">
+      
+        <input class="input border" type="text" placeholder="Message" required name="Message">
+        </div>
+        <button class="button white right section" type="submit"><i class="fa fa-paper-plane"></i> Kirim
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+ <div id="map" class="center"></div>
+
+<footer class="center black padding-64 opacity hover-opacity-off">
+
+  <a href="#contact" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+  <div class="xlarge section">
+    <a href="https://www.instagram.com/m.a.l.d.i/"><i class="fa fa-facebook-official hover-blue"></i></a>
+    <a href="https://www.instagram.com/m.a.l.d.i/"><i class="fa fa-instagram hover-white"></i></a>
+    <a href="https://twitter.com/MuhammadAldie1/"><i class="fa fa-twitter hover-teal"></i></a>
+  </div>
+  <p>Libur Terus Boss 2018 <a href="index.html" title="CSS" target="_blank" class="hover-text-green"></a></p>
+</footer>
+<script>
+      function initMap() {
+        var uluru = {lat: -7.744982, lng: 110.390361};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiBhsbBDZbrwgo82u5tpjBAZtY1xoG1oI&callback=initMap">
+</script>
+</body>
+</html>
