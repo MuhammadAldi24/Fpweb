@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About | Libur Terus Boss</title>
+
+	<meta charset="utf-8">
+	<meta name="viewponit" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <link rel="shortcut icon" type="image/icon" href="barlogo.png"/>
+
+<style>
+	body,html {
+		height: 100%;
+    	color: #262626;
+    	line-height: 1.8;
+	}
+
+
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="bar black" id="myNavbar">
+    <a href="index.html" class="bar-item button hover-blue small"><img src="img/barlogo1.png"></a>
+    <a href="tentang.html" class="bar-item button hide-small"><i class="fa fa-user"></i> About</a>
+    <a href="opentrip.html" class="bar-item button hide-small"><i class="fa fa-bus"></i> Open Trip</a>
+    <a href="hotel.html" class="bar-item button hide-small"><i class="fa fa-hotel"></i> Hotel</a>
+    <a href="Guide.html" class="bar-item button hide-small"><i class="fa fa-book"></i> Articel</a>
+    <a href="gallery.html" class="bar-item button hide-small"><i class="fa fa-image"></i> Gallery</a>
+    <a href="contact.html" class="bar-item button hide-small"><i class="fa fa-phone"></i> Contact</a>
+    <a href="#" class="bar-item button hide-small right hover-red" type="search"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+
+<div class="content container padding-64" id="about">
+  <h3 class="center">ABOUT ME</h3>
+  <p class="center"></p>
+  <p>Kota Yogyakarta atau akrab disebut Jogja adalah destinasi wisata yang sangat mempesona. Buktinya, kota ini selalu ramai dikunjungi para pelancong dari luar kota, terutama pada masa-masa liburan. Ada banyak magnet yang menjadi daya tarik Kota Jogja. Tempat wisata, kuliner, budaya dan kesenian, serta arsitektur bangunan yang ada di Jogja bisa membuat para pengunjung semakin jatuh cinta.</p>
+  <div class="row">
+    <div class="col m6 center padding-large">
+      <br>
+      <img src="img/tugu_jogja.jpg" class="round image" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <div class="col m6 hide-small padding-large">
+      <p>Nah, apabila Anda sedang merencanakan liburan ke Jogja dalam waktu dekat, tak perlu bingung hendak ke mana. Berikut adalah daftar lengkap tempat wisata di Jogja yang tidak boleh dilewatkan, mulai dari wisata sejarah hingga wisata kekinian, berbasis hiburan maupun pengetahuan, untuk anak-anak atau orang dewasa.</p>
+    </div>
+  </div>  
+</div>
+
+<footer class="center black padding-64 hover-opacity-off">
+  <a href="#about" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+  <div class="xlarge section">
+    <a href="https://www.instagram.com/m.a.l.d.i/"><i class="fa fa-facebook-official hover-blue"></i></a>
+    <a href="https://www.instagram.com/m.a.l.d.i/"><i class="fa fa-instagram hover-white"></i></a>
+    <a href="https://twitter.com/MuhammadAldie1/"><i class="fa fa-twitter hover-teal"></i></a>
+  </div>
+  <p>Libur Terus Boss 2018 <a href="index.html" title="CSS" target="_blank" class="hover-text-green"></a></p>
+</footer>
+<script>
+      function initMap() {
+        var uluru = {lat: -7.744982, lng: 110.390361};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiBhsbBDZbrwgo82u5tpjBAZtY1xoG1oI&callback=initMap">
+</script>
+</body>
+</html>
