@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<title>Gallery | Libur Terus Boss</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+  <meta name="viewponit" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script type="text/javascript" src="js/bootstrap.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/js" href="js/main.js">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="shortcut icon" type="image/icon" href="barlogo.png"/>
+<style>
+
+body,html {
+    height: 100%;
+      color: #262626;
+      line-height: 1.8;
+  }
+
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 18%;
+  right: 2;
+  top: 0;
+  width: 102%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 40%;
+  max-width: 1000px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+</style>
+
+
+<body>
+
+<div class="top">
+    <div class="bar black" id="myNavbar">
+    <a href="index.html" class="bar-item button hover-blue small"><img src="img/barlogo1.png"></a>
+    <a href="tentang.html" class="bar-item button hide-small"><i class="fa fa-user"></i> About</a>
+    <a href="opentrip.html" class="bar-item button hide-small"><i class="fa fa-bus"></i> Open Trip</a>
+    <a href="hotel.html" class="bar-item button hide-small"><i class="fa fa-hotel"></i> Hotel</a>
+    <a href="guide.html" class="bar-item button hide-small"><i class="fa fa-book"></i> Articel</a>
+    <a href="gallery.html" class="bar-item button hide-small"><i class="fa fa-image"></i> Gallery</a>
+    <a href="contact.html" class="bar-item button hide-small"><i class="fa fa-phone"></i> Contact</a>
+    <a href="#" class="bar-item button hide-small right hover-red" type="search"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<div class="display-container v1" id="home">
+    <iframe src="https://www.youtube.com/embed/Pr6KKpjkTOs?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0"></iframe>
+</div>
+
+<h2 class="padding-64 light-grey"> Photo Gallery</h2>
+
+
+<div class="grid grid3 center">
+
+    <img src="img/img/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    <img src="img/img/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <img src="img/img/3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    <img src="img/img/4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    <img src="img/img/5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+    <img src="img/img/6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+    <img src="img/img/7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">  
+    <img src="img/img/8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">  
+    <img src="img/img/9.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">  
+    <img src="img/img/10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">  
+    <img src="img/img/11.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor"> 
+    <img src="img/img/12.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor"> 
+    <img src="img/img/13.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">  
+    <img src="img/img/14.png" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+    <img src="img/img/15.png" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 15</div>
+      <img src="img/img/1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 15</div>
+      <img src="img/img/2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 15</div>
+      <img src="img/img/3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 15</div>
+      <img src="img/img/4.jpg" style="width:100%">
+    </div>
+
+     <div class="mySlides">
+      <div class="numbertext">5 / 15</div>
+      <img src="img/img/5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 15</div>
+      <img src="img/img/6.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 15</div>
+      <img src="img/img/7.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 15</div>
+      <img src="img/img/8.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 15</div>
+      <img src="img/img/9.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 15</div>
+      <img src="img/img/10.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 15</div>
+      <img src="img/img/11.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">12 / 15</div>
+      <img src="img/img/12.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">13 / 15</div>
+      <img src="img/img/13.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">14 / 15</div>
+      <img src="img/img/14.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">15 / 15</div>
+      <img src="img/img/15.png" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="img/img/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Wisata Yogyakarta">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/img/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Wisata Yogyakarta">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/img/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Wisata Yogyakarta">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/img/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Wisata Yogyakarta">
+    </div>
+
+  </div>
+</div>
+
+
+<!-- script -->
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+ 
+ <footer class="center black padding-64 hover-opacity-off">
+  <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+  <div class="xlarge section">
+    <a href="https://www.instagram.com/m.a.l.d.i/"><i class="fa fa-facebook-official hover-blue"></i></a>
+    <a href="https://www.instagram.com/m.a.l.d.i/"><i class="fa fa-instagram hover-white"></i></a>
+    <a href="https://twitter.com/MuhammadAldie1"><i class="fa fa-twitter hover-teal"></i></a>
+  </div>
+  <p>Libur Terus Boss 2018 <a href="index.html" title="CSS" target="_blank" class="hover-text-green"></a></p>
+</footer>   
+</body>
+</html>
