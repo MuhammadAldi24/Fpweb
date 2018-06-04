@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="scotchApp">
+
+<head>
+  <title>Sejarah | Libur Terus Boss</title>
+  <!-- SCROLLS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!-- SPELLS -->
+  <script src="js/angular.min.js"></script>
+  <script src="js/angular-route.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<!-- define angular controller -->
+<body ng-controller="mainController">
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="guide.html"><i class="fa fa-arrow-left"></i> Back</a></li>
+      </ul>
+    </div>
+  </nav>
+<div>
+  
+</div>
+  <div id="main">
+  <div ng-view class="content container padding-64"></div>
+  
+    <!-- angular templating -->
+		<!-- this is where content will be injected -->
+    <!-- <div ng-view></div> -->
+  </div>
+
+<footer class="center black padding-64 opacity hover-opacity-off">
+
+<!-- <a href="#slider" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a> -->
+  <div class="xlarge section">
+    <a href="https://www.instagram.com/m.a.l.d.i/"><i class="fa fa-facebook-official hover-blue"></i></a>
+    <a href="https://www.instagram.com/m.a.l.d.i/"><i class="fa fa-instagram hover-white"></i></a>
+    <a href="https://twitter.com/MuhammadAldie1/"><i class="fa fa-twitter hover-teal"></i></a>
+  </div>
+   <p>Libur Terus Boss 2018 <a href="index.html" title="CSS" target="_blank" class="hover-text-green"></a></p>
+</footer>
+  
+</body>
+
+</html>
